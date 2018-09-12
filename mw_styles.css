@@ -13,21 +13,25 @@
 */
 
 /* Structural Styles */
+/* The whole background color of the sheet has been set */
 html {
     background-color: rgb(173, 189, 227);
 }
 
+/* The font family was set and background color of the body element set */
 body {
     background-color: rgb(227, 210, 173);
     font-family: ‘Century Gothic’, sans-serif;
 }
 
+/* The footer within the body element had it's background color set and the top and bottom padding set to 5 pixels */
 body footer {
     background-color: rgb(208, 184, 109);
     padding-bottom: 5px;
     padding-top: 5px;
 }
 
+/* The address element has had it's font weight, size, and was set to have it's text aligned to be in the center*/
 address {
     font-weight: normal;
     font-size: 0.9em;
@@ -37,6 +41,7 @@ address {
 }
 
 /* Heading Styles */
+/* All h1 and h2 elements are set with a normal font-weight */
 h1,
 h2 {
     font-weight: normal;
@@ -50,14 +55,16 @@ nav>ul {
     list-style-type: none;
 }
 
+/* Links are displayed as a bluish color */
 nav a:visited,
 nav a:link {
     color: rgb(43, 59, 125);
     text-decoration: none;
 }
 
-nav a:hover,
-nav a:link {
+/* When you hover over the link, it changes the link to red */
+nav a:active,
+nav a:hover {
     color: rgb(212, 35, 35);
 }
 
@@ -71,14 +78,56 @@ article#tour_summary p {
     font-size: 1.1em;
 }
 
-article#tour_summary:first-of-type:first-line {
+/* The first line  */
+article#tour_summary p:first-of-type:first-line {
     font-size: 1.2em;
-    text-transform: lowercase;
+    font-variant: small-caps;
 }
 
 /* Aside Styles */
+/* Each element within the aside element that has the ID of tour_itinerary is having it's font defined */
 aside#tour_itinerary {
     font-size: 0.8em;
 }
 
+aside#tour_itinerary h1 {
+    font-size: 1.2em;
+}
+
+aside#tour_itinerary h2 {
+    font-size: 0.9em;
+}
+
+aside#tour_itinerary p {
+    font-size: 0.8em;
+}
+
+/* For every odd paragraph tag and h2 tag, it's set to a grayish color, for every even, it's set to a bluish, so each Day on the list is switching back and forth from the color */
+aside p:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+aside h2:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+aside p:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+}
+
+aside h2:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+}
+
 /* Blockquote Styles */
+/* We set the background color for the blockquote to a light blueish color, set the text color to a whitish, and then give it a transparency/opacity of .65 (a bit over half of being transparent) */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgb(255, 255, 255);
+    opacity: 0.65;
+}
+
+/* We set the blockquote padding spaces to define where the blockquote is around the text */
+blockquote p {
+    padding: 2.5px 10px 2.5px 10px
+}
